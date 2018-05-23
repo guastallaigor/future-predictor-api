@@ -1,13 +1,13 @@
 import { Column, Entity, PrimaryColumn } from 'typeorm';
 
 @Entity()
-export class Category {
+export class Future {
   @PrimaryColumn()
   id: string;
 
   @Column()
-  name: string;
+  percentage: number;
 
   @Column()
-  description: string;
+  result: string;
 }

@@ -1,14 +1,10 @@
 import { Module } from '@nestjs/common';
 
-import { EntriesModule } from './entries/entries.module';
-import { AuthorsModule } from './authors/authors.module';
-import { CategoriesModule } from './categories/categories.module';
+import { Future } from './future/future.module';
 @Module({
     modules: [
-      EntriesModule,
-      AuthorsModule,
-      CategoriesModule
+      Future,
     ],
 })
 
-export class ApplicationModule { }
+export class ApplicationModule {}
