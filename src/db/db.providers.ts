@@ -11,9 +11,7 @@ export const dbProvider =
       port: parseInt(process.env.DB_PORT, 10),
       username: process.env.DB_USER,
       password: process.env.DB_PW,
-      entities: [
-        Future,
-      ],
+      entities: [Future],
       synchronize: true, // DEV only, do not use on PROD!
     }),
   };

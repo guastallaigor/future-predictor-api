@@ -8,9 +8,7 @@ import { Future } from './future.interface';
 @Controller('future')
 export class FutureController {
 
-  constructor(
-    private readonly futureService: FutureService,
-  ) { }
+  constructor(private readonly futureService: FutureService) {}
 
   @Get()
   findAll(): Promise<Future[]> {
