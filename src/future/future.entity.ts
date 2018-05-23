@@ -10,4 +10,7 @@ export class Future {
 
   @Column()
   result: string;
+
+  @Column()
+  name: string;
 }
