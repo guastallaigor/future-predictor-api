@@ -40,7 +40,7 @@ Also has other HTTP Request Methods, such as GET and DELETE to GET all your pred
 ## API Information Table
 
 Method | Request URL | QueryString | Body
--------|-------------|-------------|
+--- | --- | --- | ---
 GET | api/v1/future | Optional, but you can pass `?id=` | -
 POST | api/v1/future | - | { name: 'Name' } | -
 DELETE | api/v1/future/:id | - | -
