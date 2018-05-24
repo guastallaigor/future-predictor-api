@@ -4,7 +4,7 @@
 </div>
 
 <p align="center">
-  Future Predictor API is a [Nestjs](https://github.com/nestjs/nest) fun API that predicts your future and gives you a percentage chance of success.
+  Future Predictor API is a <a href="https://github.com/nestjs/nest">Nestjs</a> fun API that predicts your future and gives you a percentage chance of success.
 </p>
 
 ## How it works?
@@ -12,8 +12,7 @@
 You send a POST HTTP request to (default) `localhost:3000/api/v1/future` with a JSON on the body that has a name key. Example:
 
 ```javascript
-  // imports
-  let params = {
+  const params = {
     name: 'Igor Guastalla'
   }
 
@@ -25,7 +24,6 @@ You send a POST HTTP request to (default) `localhost:3000/api/v1/future` with a 
 You should get a JSON like this:
 
 ```javascript
-  // imports
   {
     "name": "Igor Guastalla",
     "percentage": 50,
@@ -35,6 +33,7 @@ You should get a JSON like this:
 ```
 
 It stores the data on a PostgreSQL database.
+
 Also has other HTTP Request Methods, such as GET and DELETE to GET all your predictions or delete one.
 
 ## Warning
