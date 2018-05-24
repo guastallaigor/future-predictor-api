@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./util/logo.svg" width="128px">
+  <img src="./util/logo.jpeg" width="128px">
   <h1>Future Predictor API</h1>
 </div>
 
