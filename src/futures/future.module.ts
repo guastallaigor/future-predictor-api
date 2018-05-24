@@ -12,6 +12,7 @@ import { futureProviders } from './future.providers';
         ...futureProviders,
         FutureService,
     ],
+    exports: [FutureService],
 })
 
-export class FutureModule {}
+export class FutureModule { }

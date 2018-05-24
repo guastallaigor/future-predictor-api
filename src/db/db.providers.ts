@@ -1,6 +1,6 @@
 import { createConnection } from 'typeorm';
 
-import { Future } from '../future/future.entity';
+import { Future } from '../futures/future.entity';
 
 export const dbProvider =
   {

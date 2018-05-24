@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 
-import { Future } from './future/future.module';
+import { FutureModule } from './futures/future.module';
 @Module({
-    modules: [Future],
+    modules: [FutureModule],
 })
 
-export class ApplicationModule {}
+export class ApplicationModule { }

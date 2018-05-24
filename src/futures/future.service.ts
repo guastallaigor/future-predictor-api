@@ -15,9 +15,9 @@ export class FutureService {
     }
   }
 
-  async findOne(id): Promise<Future[]> {
+  async findOne(id) {
     try {
-      return await this.futureRepository.findOneOrFail(id);
+      return await this.futureRepository.find(id);
     } catch (err) {
       return err;
     }

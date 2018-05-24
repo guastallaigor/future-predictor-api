@@ -12,7 +12,7 @@ services:
       - DB_HOST=postgres
       - DB_PORT=5432
       - DB_USER=postgres
-      - DB_PW=crudjs
+      - DB_PW=future
     ports:
       - 3000:3000
     depends_on:
@@ -29,7 +29,7 @@ services:
     restart: always
     environment:
       - DB_USER=postgres
-      - DB_PASS=crudjs
+      - DB_PASS=future
 
   adminer:
     image: adminer
