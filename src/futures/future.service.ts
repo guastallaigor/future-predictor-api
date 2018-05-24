@@ -15,17 +15,17 @@ export class FutureService {
     }
   }
 
-  async findOne(id) {
+  async findOne(futureId): Promise<Future> {
     try {
-      return await this.futureRepository.find(id);
+      return await this.futureRepository.findOne(futureId);
     } catch (err) {
       return err;
     }
   }
 
-  async create(entry: Future) {
+  async create(future: Future): Promise<Future> {
     try {
-      return await this.futureRepository.save(entry);
+      return await this.futureRepository.save(future);
     } catch (err) {
       return err;
     }
